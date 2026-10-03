@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>Star Regions</title>
+<style>
+  :root { --canvas: #F1F3F5; --ink: #15191F; --soft: #5A6472; --rule: #D5D9DF; }
+  @media (prefers-color-scheme: dark) {
+    :root { --canvas: #1B1F24; --ink: #ECEEF1; --soft: #A3ABB6; --rule: #3A414A; }
+  }
+  html { background: var(--canvas); }
+  body {
+    margin: 0; color: var(--ink);
+    font-family: system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
+    font-size: 17px; line-height: 1.6; -webkit-text-size-adjust: 100%;
+  }
+  .page { max-width: 680px; margin: 0 auto; padding: 0 22px 64px; border-top: 6px solid var(--ink); }
+  svg { width: 44px; height: 44px; margin-top: 48px; }
+  h1 { font-stretch: expanded; font-size: 34px; letter-spacing: 0.02em; margin: 12px 0 4px; }
+  .tag { color: var(--soft); margin: 0 0 30px; }
+  nav a { display: block; color: var(--ink); padding: 14px 0; border-top: 1px solid var(--rule); text-decoration: none; font-weight: 600; }
+  nav a:last-child { border-bottom: 1px solid var(--rule); }
+  nav a::after { content: " \2192"; color: var(--soft); }
+  footer { margin-top: 40px; color: var(--soft); font-size: 14px; }
+</style>
+</head>
+<body>
+<div class="page">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 1.8l2.9 6.7 7.3.6-5.5 4.8 1.7 7.1L12 17.3 5.6 21l1.7-7.1L1.8 9.1l7.3-.6z"/></svg>
+  <h1>Star Regions</h1>
+  <p class="tag">A logic puzzle of stars and colored regions, for iPhone and iPad.</p>
+  <nav>
+    <a href="support.html">Support</a>
+    <a href="privacy.html">Privacy Policy</a>
+  </nav>
+  <footer>&copy; 2026 Steven Thompson</footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>Star Regions · Support</title>
+<style>
+  :root {
+    --canvas: #F1F3F5; --sheet: #FFFFFF; --ink: #15191F; --soft: #5A6472; --rule: #D5D9DF;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --canvas: #1B1F24; --sheet: #242930; --ink: #ECEEF1; --soft: #A3ABB6; --rule: #3A414A; }
+  }
+  html { background: var(--canvas); }
+  body {
+    margin: 0; color: var(--ink);
+    font-family: system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
+    font-size: 17px; line-height: 1.6; -webkit-text-size-adjust: 100%;
+  }
+  .page { max-width: 680px; margin: 0 auto; padding: 0 22px 64px; }
+  .masthead { border-top: 6px solid var(--ink); padding: 28px 0 18px; border-bottom: 1px solid var(--rule); }
+  .masthead a { color: inherit; text-decoration: none; display: inline-flex; align-items: center; gap: 10px; }
+  .masthead svg { width: 26px; height: 26px; }
+  .name { font-weight: 700; font-stretch: expanded; letter-spacing: 0.04em; text-transform: uppercase; font-size: 15px; }
+  h1 { font-stretch: expanded; font-size: 32px; line-height: 1.15; margin: 34px 0 6px; }
+  .dated { color: var(--soft); font-size: 15px; margin: 0 0 26px; }
+  .lead { background: var(--sheet); border-left: 4px solid var(--ink); padding: 16px 20px; }
+  .lead p { margin: 0 0 8px; } .lead p:last-child { margin: 0; }
+  h2 { font-size: 19px; font-stretch: expanded; margin: 36px 0 10px; }
+  details { border-top: 1px solid var(--rule); padding: 12px 0; }
+  details:last-of-type { border-bottom: 1px solid var(--rule); }
+  summary { cursor: pointer; font-weight: 600; list-style-position: outside; }
+  details p { margin: 10px 0 2px; }
+  a { color: var(--ink); text-underline-offset: 3px; }
+  .path { white-space: nowrap; }
+  footer { margin-top: 44px; color: var(--soft); font-size: 14px; }
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="masthead">
+    <a href="index.html" aria-label="Star Regions">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 1.8l2.9 6.7 7.3.6-5.5 4.8 1.7 7.1L12 17.3 5.6 21l1.7-7.1L1.8 9.1l7.3-.6z"/></svg>
+      <span class="name">Star Regions</span>
+    </a>
+  </div>
+
+  <h1>Support</h1>
+  <p class="dated">Help with Star Regions for iPhone and iPad</p>
+
+  <div class="lead">
+    <p>A question, a bug, or an idea &mdash; write to
+    <a href="mailto:damla.miles2726@gmail.com">damla.miles2726@gmail.com</a>.</p>
+    <p>It helps a lot if you mention your device model, the iOS or iPadOS version, and the app
+    version shown in <span class="path">Settings &rarr; About</span>.</p>
+  </div>
+
+  <h2>The rules in one paragraph</h2>
+  <p>The board is a square grid split into colored regions. Place stars so that every row, every
+  column and every region holds exactly one star &mdash; or exactly two on 2&#9733; boards. Two stars
+  may never touch, not even diagonally. Tap a cell once to mark it &#10005;, a second time for a star,
+  a third time to clear it.</p>
+
+  <h2>Common questions</h2>
+
+  <details>
+    <summary>What is the difference between 1&#9733; and 2&#9733;?</summary>
+    <p>On 1&#9733; boards (5&times;5 to 11&times;11) each row, column and region gets one star. On
+    2&#9733; boards (9&times;9 to 12&times;12) each of them gets two, which makes for longer and more
+    intricate puzzles. Tap the size chip in the top-left corner to switch between them. Every size is
+    open from the start.</p>
+  </details>
+
+  <details>
+    <summary>What do the &#10005; marks and Auto-X do?</summary>
+    <p>A &#10005; is your own note that a star cannot go in that cell. Auto-X, in the bottom bar or in
+    Settings, adds a small dot to every empty cell where a star would break a rule right now. Dots
+    follow your stars: remove a star and its dots disappear. Tapping a dot turns it into your own
+    &#10005;.</p>
+  </details>
+
+  <details>
+    <summary>I&rsquo;m stuck. What does Hint do?</summary>
+    <p>If something on the board contradicts the solution, Hint points it out without removing
+    anything. If everything is correct so far, it places one correct star. Hints are never limited;
+    each new one takes 1 point off the puzzle.</p>
+  </details>
+
+  <details>
+    <summary>How do points work?</summary>
+    <p>A puzzle is worth as many points as it has stars. A hint or a restart takes 1 point off, never
+    below 1. Points are just a record of how cleanly you solved: they never unlock or limit
+    anything. Your total is shown at the top of the size picker.</p>
+  </details>
+
+  <details>
+    <summary>Why didn&rsquo;t my time count as a best time?</summary>
+    <p>A best time is saved only for a puzzle solved without hints and without starting over. Once
+    the position of a star has been shown, the time no longer says much about solving. The puzzle
+    still counts as solved, and its points are added.</p>
+  </details>
+
+  <details>
+    <summary>Start over or New puzzle?</summary>
+    <p><strong>Start over</strong> clears your marks, the Undo history and the clock on the same puzzle,
+    and takes 1 point off it. <strong>New puzzle</strong> deals a fresh one of the same size with no
+    effect on points. Both are in the &hellip; menu at the top right.</p>
+  </details>
+
+  <details>
+    <summary>Does the timer keep running when I leave?</summary>
+    <p>No. It pauses when the app goes to the background and while Settings, How to play or the size
+    picker is open. If you put the device down mid-puzzle, it stops counting ten minutes after your
+    last move.
+    You can hide the timer in Settings; it still keeps time for your best times.</p>
+  </details>
+
+  <details>
+    <summary>Will I get the same puzzle twice?</summary>
+    <p>Each board size has its own collection of 1,000 puzzles, dealt in an order shuffled for your
+    device. A puzzle comes back only after you have played through the whole collection for that
+    size, and then it appears rotated or mirrored.</p>
+  </details>
+
+  <details>
+    <summary>Some regions are hard to tell apart</summary>
+    <p>Region borders are always drawn. Turn on
+    <span class="path">Settings &rarr; Accessibility &rarr; Bold region outlines</span> to make them thicker; the iOS Increase Contrast setting does the same. Light and dark appearance
+    can be chosen in Settings. With VoiceOver, every cell announces its row, column, region and
+    content.</p>
+  </details>
+
+  <details>
+    <summary>Do I need an internet connection?</summary>
+    <p>No. Everything works offline, including every puzzle.</p>
+  </details>
+
+  <details>
+    <summary>Does it work on iPad?</summary>
+    <p>Yes, in any orientation.</p>
+  </details>
+
+  <details>
+    <summary>Is my progress synced between devices?</summary>
+    <p>No. Progress stays on the device where you play.</p>
+  </details>
+
+  <details>
+    <summary>How do I reset my progress?</summary>
+    <p><span class="path">Settings &rarr; Reset progress</span> clears solved counts, points and best
+    times. The puzzle you are playing stays. Deleting the app removes all of its data.</p>
+  </details>
+
+  <details>
+    <summary>Which languages are available?</summary>
+    <p>English, German, French, Spanish, Brazilian Portuguese and Russian. The app follows your
+    device language; you can also choose a language for Star Regions alone on its page in the iOS
+    Settings app, under Language.</p>
+  </details>
+
+  <h2>Privacy</h2>
+  <p>Star Regions collects no personal data. Details are in the <a href="privacy.html">privacy policy</a>.</p>
+
+  <footer>
+    Steven Thompson &middot; <a href="privacy.html">Privacy Policy</a> &middot;
+    <a href="mailto:damla.miles2726@gmail.com">damla.miles2726@gmail.com</a>
+  </footer>
+</div>
+</body>
+</html>
